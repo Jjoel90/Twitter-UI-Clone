@@ -67,47 +67,82 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('dumper')
   </head>
-  <body class="bg-black">
+  <body class="flex bg-black gap-10">
     <header class="">
-        <img src="/public/images/Vector.svg" alt="svp" class="py-4 p-4">
-        <div class="m-4 space-y-2">
-          <div class=" Nav flex gap-4">
-            <img src="/public/images/Group.svg" alt="svg" class="">
-            <a href="" class="font-semibold text-white">Home</a>
-          </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Group (3).svg" alt="" class="">
-            <a href="" class="font-semibold text-white">Explore</a>
-          </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Group (2)2.svg" alt="">
-            <a href="" class="font-semibold text-white">Notifications</a>
-          </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Group (4)1.svg" alt="">
-            <a href="" class="font-semibold text-white">Messages</a>
-          </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Vector (2)1.svg" alt="">
-            <a href="" class="font-semibold text-white">Bookmarks</a>
-          </div>
-          <div class="flex gap-4">
+      <section class="">
+        <img src="/public/images/Vector.svg" alt="svp" class="py-2 p-4 w-23 h-18">
+          <div>
+            <div class="m-4 space-y-2">
+              <div class=" Nav flex gap-4">
+                <img src="/public/images/Group.svg" alt="svg" class="">
+                <a href="" class="font-semibold text-white">Home</a>
+              </div>
+              <div class="flex gap-4">
+                <img src="/public/images/Group (3).svg" alt="" class="">
+                <a href="" class="font-semibold text-white">Explore</a>
+              </div>
+              <div class="flex gap-4">
+                <img src="/public/images/Group (2)2.svg" alt="">
+                <a href="" class="font-semibold text-white">Notifications</a>
+              </div>
+              <div class="flex gap-4">
+                <img src="/public/images/Group (4)1.svg" alt="">
+                <a href="" class="font-semibold text-white">Messages</a>
+              </div>
+              <div class="flex gap-4">
+                <img src="/public/images/Vector (2)1.svg" alt="">
+                <a href="" class="font-semibold text-white">Bookmarks</a>
+              </div>
+            <div class="flex gap-4">
             <img src="/public/images/Group (4)1.svg" alt="">
             <a href="" class="font-semibold text-white">Lists</a>
+            </div>
+            <div class="flex gap-4">
+              <img src="/public/images/Group (2)1.svg" alt="">
+              <a href="" class="font-semibold text-white">Profile</a>
+            </div>
+            <div class="flex gap-4">
+              <img src="/public/images/Group (2)3.svg" alt="">
+              <a href="" class="font-semibold text-white">More</a>
+            </div>
           </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Group (2)1.svg" alt="">
-            <a href="" class="font-semibold text-white">Profile</a>
-          </div>
-          <div class="flex gap-4">
-            <img src="/public/images/Group (2)3.svg" alt="">
-            <a href="" class="font-semibold text-white">More</a>
-          </div>
+          <button type="submit" class="bg-[#1D9BF0] text-white mx-4 px-16 rounded-full border-md border-[#1D9BF0] w-auto h-auto">Tweet</button>
         
         </div>
-        
-
+      </section>
     </header>
+    <main class=" w-full ">
+      <section  class="rounded-sm border border-gray-800 ">
+        <div class="rounded-sm border border-gray-800 ">
+          <div class="flex justify-between mx-4 py-2">
+            <a href="" class="font-semibold text-white">Home</a>
+          <img src="/public/images/Top-Tweets.svg" alt="" class="">
+          </div>
+        </div>
+        <div class="rounded-sm border border-gray-800 w-full space-y-2">
+          <div class="flex gap-4">
+            <img src="/public/images/Profile-Photo.svg" alt="">
+            <p class="text-white text-gray text-">What's happening?</p> 
+          </div>
+          <div class="flex justify-between items-center gap-80">
+            <div class="flex gap-4 m-20">
+              <img src="/public/images/Group (2)9.svg" alt=" " class="">
+              <img src="/public/images/Group (2)8.svg" alt="">
+              <img src="/public/images/Vector (2)7.svg" alt="">
+              <img src="/public/images/Group (2)10.svg" alt="">
+              <img src="/public/images/Schedule.svg" alt="">
+            </div>
+            <button type="submit" class="bg-[#1D9BF0] text-white mx-2 px-6 rounded-full border-md border-[#1D9BF0] w-auto h-8 ">Tweet</button>
+          </div>
+          
+        </div>
+        
+        
+      </section>
+    </main>
+    <footer class="py-2 ">
+      <input type="text" name="name" id="" placeholder="Search Twitter" class="bg-gray w-auto h-auto rounded-full border-md border-gray mx-2 px-2">
+    </footer>
     
   </body>
 </html>
