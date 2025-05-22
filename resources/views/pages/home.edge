@@ -67,64 +67,92 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('dumper')
   </head>
-  <body class="flex bg-black gap-10">
-    <header class="flex flex-cols-2 ">
-      <section class="">
-        <img src="/public/images/Vector.svg" alt="svp" class="py-2 p-4 w-23 h-18">
+
+  <body class="flex justify-center bg-black text-white gap-10">
+
+    <header class="flex flex-cols-2 w-[20%]">
+
+        <section class="space-y-60">
           <div>
-            <div class="m-4 space-y-2">
-              <div class=" Nav flex gap-4">
-                <img src="/public/images/Group.svg" alt="svg" class="">
-                <a href="" class="font-semibold text-white">Home</a>
-              </div>
-              <div class="flex gap-4">
-                <img src="/public/images/Group (3).svg" alt="" class="">
-                <a href="" class="font-semibold text-white">Explore</a>
-              </div>
-              <div class="flex gap-4">
-                <img src="/public/images/Group (2)2.svg" alt="">
-                <a href="" class="font-semibold text-white">Notifications</a>
-              </div>
-              <div class="flex gap-4">
+              <img src="/public/images/Vector.svg" alt="svp" class="py-2 p-4 w-23 h-18">
+              <div>
+                <div class="m-4 space-y-2">
+                  <div class=" Nav flex gap-4">
+                    <img src="/public/images/Group (12).svg" alt="svg" class="">
+                    <a href="" class="font-semibold text-white">Home</a>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/public/images/Group (3).svg" alt="" class="">
+                    <a href="" class="font-semibold text-white">Explore</a>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/public/images/Group (2)2.svg" alt="">
+                    <a href="" class="font-semibold text-white">Notifications</a>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/public/images/Group (4)1.svg" alt="">
+                    <a href="" class="font-semibold text-white">Messages</a>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/public/images/Vector (2)1.svg" alt="" class="w-4 h-auto">
+                    <a href="" class="font-semibold text-white">Bookmarks</a>
+                  </div>
+                <div class="flex gap-4">
                 <img src="/public/images/Group (4)1.svg" alt="">
-                <a href="" class="font-semibold text-white">Messages</a>
+                <a href="" class="font-semibold text-white">Lists</a>
+                </div>
+                <div class="flex gap-4">
+                  <img src="/public/images/Group (2)1.svg" alt="">
+                  <a href="" class="font-semibold text-white">Profile</a>
+                </div>
+                <div class="flex gap-4">
+                  <img src="/public/images/Group (2)3.svg" alt="">
+                  <a href="" class="font-semibold text-white">More</a>
+                </div>
               </div>
-              <div class="flex gap-4">
-                <img src="/public/images/Vector (2)1.svg" alt="" class="w-4 h-auto">
-                <a href="" class="font-semibold text-white">Bookmarks</a>
-              </div>
-            <div class="flex gap-4">
-            <img src="/public/images/Group (4)1.svg" alt="">
-            <a href="" class="font-semibold text-white">Lists</a>
+              <button type="submit" class="bg-[#1D9BF0] text-white mx-4 px-16 rounded-full border-md border-[#1D9BF0] w-auto h-auto">Tweet</button>
+            
             </div>
-            <div class="flex gap-4">
-              <img src="/public/images/Group (2)1.svg" alt="">
-              <a href="" class="font-semibold text-white">Profile</a>
-            </div>
-            <div class="flex gap-4">
-              <img src="/public/images/Group (2)3.svg" alt="">
-              <a href="" class="font-semibold text-white">More</a>
-            </div>
-          </div>
-          <button type="submit" class="bg-[#1D9BF0] text-white mx-4 px-16 rounded-full border-md border-[#1D9BF0] w-auto h-auto">Tweet</button>
-        
         </div>
+        <div>
+          <div class="flex gap-4 p-2">
+            <img src="/public/images/Profile-Photo.svg" alt="" class="">
+        
+            <div class="flex items-center">
+              <div class="">
+                <div class="flex ">
+                  <div class="flex ">
+                    <p class="text-white ">Bradley Ortiz</p>
+                    <img src="/public/images/Vector (5).svg" alt="" class="w--auto mr-2">
+                  </div>
+                  <img src="/public/images/Group.png" alt="" class="opacity w-2 h-1">
+                </div>
+                
+                <p class="text-gray-400 text-sm"> @bradley_ </p> 
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
       </section>
     </header>
-    <main class=" w-full ">
-      <section  class="rounded-sm border border-gray-800 ">
-        <div class="rounded-sm border border-gray-800 ">
+
+    <main class="w-[41%] ">
+      <section  class="rounded border border-gray-800 divide-y divide-gray-800 ">
+        <div class=" ">
           <div class="flex justify-between mx-4 py-2">
             <a href="" class="font-semibold text-white">Home</a>
           <img src="/public/images/Top-Tweets.svg" alt="" class="">
           </div>
         </div>
-        <div class="rounded-sm border border-gray-800 w-full space-y-2">
+        <div class=" w-full space-y-2">
           <div class="flex gap-4 p-2">
             <img src="/public/images/Profile-Photo.svg" alt="" class="">
             <p class=" text-gray text-gray-500">What's happening?</p> 
           </div>
-          <div class="flex justify-between items-center gap-60">
+          <div class="flex justify-between items-center gap-60 ">
             <div class="flex gap-4 m-2 px-20">
               <img src="/public/images/Group (2)9.svg" alt=" " class="">
               <img src="/public/images/Group (2)8.svg" alt="">
@@ -133,11 +161,10 @@
               <img src="/public/images/Schedule.svg" alt="">
             </div>
             <button type="submit" class="bg-[#1D9BF0] text-white m-2 px-6 rounded-full border-md border-[#1D9BF0] w-auto h-8 ">Tweet</button>
-          </div>
-          
+          </div> 
         </div>
-        <div class="flex gap-2 m-2">
-          
+
+        <div class="flex gap-2">
             <img src="/public/images/image 1.png" alt="png" class="w-auto h-10 mx-2 ">
           <div class="">
             <div class="flex items-center gap-1">
@@ -145,7 +172,7 @@
               <img src="/public/images/Group (2)0.svg" alt="">
               <p class="text-gray-500 text-xs">@CCN. 7m </p>
             </div>
-            <div class="text-gray-500">
+            <div class="">
               <p>President Joe Biden touted a new agreement reached with the</p>
               <p>European Union to ease Trump-era tariffs on aluminium and steel as a</p>
               <p>"major breakthroug" that would serve to both strengthen the US steel</p>
@@ -156,44 +183,41 @@
                 <img src="/public/images/Buton.svg" alt="" >
                 <span class="text-gray-500">57</span>
               </div>
-              <div class="flex items-center gap-2">
-                <img src="/public/images/Retweet.svg" alt="Mon icone" class="opacity-25">
+              <div class="flex items-center gap-4">
+                <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25">
                 <span class="text-gray-500 gap-6">144</span>
               </div>
-              <div class="flex items-center text-gray-500 gap-2">
-                <img src="/public/images/React.svg" alt="">
-                <span class="text-gray-500 gap-6">184</span>
+              <div class="flex items-center text-gray-500 gap-4">
+                <img src="/public/images/React.svg" alt="icon" class="opacity-25">
+                <span class="text-gray-500 gap-5">184</span>
               </div class="">
-              <img src="/public/images/Group (200).svg" alt="">
+              <img src="/public/images/Group (200).svg" alt="icon" class="opacity-25">
             </div>
             
-            
-        
           </div> 
         </div>
 
-        <div class="flex gap-4 rounded-sm border border-gray-800 w-full ">
+        <div class="flex gap-4  w-full">
 
           <img src="/public/images/image 1 (1).svg" alt="" class="w-auto h-10 mx-2 ">
-          <div class="">
+          <div class="space-y-4">
             <div class="space-y-4">
-              <div class="flex items-center gap-1">
+              <div class="flex items-center gap-1 space-y-4">
                 <p class="text-white ">The New York Times</p>
                 <img src="/public/images/Group (2)0.svg" alt="">
                 <p class="text-gray-500 text-xs">@nytimes. 2h </p>
               </div>
               <div class="text-gray-500 ">
-                <div class="">
-                  <p>Gardening boomed during the pandemic. Six Black writers share how it</p>
+                <div class="px-1 ">
+                  <p>Gardning boomed during the pandemic. Six Black writers share how it</p>
                   <p>has helped them re-establish, and reimagine, a connection to</p>
                   <p>cultivation and the land</p>
                 </di>
-                  <img src="/public/images/Img.png" alt="" class="wx-360 h-auto">  
+                  <img src="/public/images/Img.png" alt="" class="wx-360 h-auto mb-6">  
                 </div>
               </div>
             </div>
-          </div> 
-          
+          </div>   
         </div>
         
         <div>
@@ -209,13 +233,11 @@
             <div class="text-gray-500">
               <p>BIG NEWS lol jk still Twitter</p>
             </div>
-        
           </div>  
           
         </div>
-        <div></div>\
 
-        <div class="flex gap-4 rounded-sm border border-gray-800 w-full ">
+        <div class="flex gap-4  w-full ">
           <div class="flex gap-2 m-2">
           
             <img src="/public/images/image 1 (2).svg" alt="png" class="w-auto h-10 mx-2 ">
@@ -225,16 +247,9 @@
               <img src="/public/images/Group (2)0.svg" alt="">
               <p class="text-gray-500 text-xs">@Twitter. Oct 4</p>
             </div>
-            <div class="text-gray-500">
-              <p>hello literally everyone</p>
-       
-            </div>
-        
+              <p class="text-gray-500">hello literally everyone</p>
           </div> 
         </div>
-        
-        <div></div>
-
         
         <div class="flex gap-2 m-2">
           
@@ -245,25 +260,22 @@
             <img src="/public/images/Group (2)0.svg" alt="">
             <p class="text-gray-500 text-xs">@Twitter. Oct 4</p>
           </div>
-          <div class="text-gray-500">
-            <p>hello literally everyone</p>
-          </div>
-      
+            <p class="text-gray-500">hello literally everyone</p>
         </div>  
         
       </section>
     </main>
-    <footer class="py-2 space-y-2">
+    
+    <footer class="py-2 space-y- w-[25%] " >
       <div class="relative">
-        <div class="text-center text-s text-gray-500 bg-gray-800 w-auto h-auto rounded-full border-md border-gray mx-2 px-2 focus:outline-none">
+        <div class="text-center text-s text-gray-500 bg-[rgb(32,35,39)] w-auto h-auto rounded-full border-md border-gray mx-2 px-2 focus:outline-none">
           <input type="text" name="name" id="" placeholder="Search Twitter" class="bg-transparent text-center" >
           <img src="/public/images/Vector (20).svg" alt="" class="absolute left-6  top-1">
         </div>
         
       </div>
       
-
-      <div class="bg-gray-800 space-y-4 rounded border-md border-gray-200 m-2 p-2">
+      <div class="bg-[rgb(32,35,39)] space-y-4 rounded border-md border-gray-200 m-2 p-2">
 
         <div class=" ">
           <div class="flex items-center gap-20 ">
@@ -313,27 +325,88 @@
           <a href="" class="text-[#1D9BF0] text-sm text-xs ">Show more</a>
         
       </div>
-      <div class="space-y-4 bg-gray-800 rounded border-md border-gray-200 m-2 p-2">
+      <div class="space-y-4 bg-[rgb(32,35,39)] rounded border-md border-gray-200 m-2 p-2">
         <h1 class="text-white text-semibold text-xl">Who to follow</h1>
-        <div class="flex items-center justify-between w-full space-y-2">
-          <img src="/public/images/image 1 (1).svg" alt="" class="w-8 h-8 mr-2">
 
-          <div class="flex items-center">
-              <div class="flex items-center">
-                <p class="text-white text-sm w-4 h-4 mr-3">The New York Times</p>
-                <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
-                <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 mx-2 rounded-full border-md w-auto h-6">Follow</button>  
+
+        <div class="flex items-center">
+          <div class="flex items-center w-full space-y-2">
+          
+            <img src="/public/images/image 1 (1).svg" alt="" class="w-8 h-8 mr-2">
+  
+            <div class="flex items-center">
+              <div class="">
+                <div class="flex">
+                  <p class="text-white ">The New York Times</p>
+                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
+                </div>
+                
+                <p class="text-gray-400 text-sm"> @nytimes. 2h </p> 
               </div>
-      
+            </div>
           </div>
           
+          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6">Follow</button>
+        </div>
+
+        <div class="flex items-center">
+          <div class="flex items-center w-full space-y-2">
+          
+            <img src="/public/images/image 1.png" alt="" class="w-8 h-8 mr-2">
+  
+            <div class="flex items-center">
+              <div class="">
+                <div class="flex">
+                  <p class="text-white ">CNN</p>
+                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
+                </div>
+                
+                <p class="text-gray-400 text-sm"> @CNN</p> 
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6 ">Follow</button>
+        </div>
+
+        <div class="flex items-center">
+          <div class="flex items-center w-full space-y-2">
+          
+            <img src="/public/images/image 1 (2).svg" alt="" class="w-8 h-8 mr-2">
+  
+            <div class="flex items-center">
+              <div class="">
+                <div class="flex">
+                  <p class="text-white ">Twitter</p>
+                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
+                </div>
+                
+                <p class="text-gray-400 text-sm"> @Twitter</p> 
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6">Follow</button>
 
         </div>
-        <p class="text-gray-400 text-sm ">@nytimes. 2h </p>
-        <div>
-          
+        <a href="" class="text-[#1D9BF0] text-sm text-xs ">Show more</a>
+
+      </div>
+
+      <div class="space-y-2 text-gray-800 text-sm p-4 ">
+        <div class="flex gap-1 items center ">
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>cookie Policy</p>
+        </div>
+        <div class="flex gap-1">
+          <p>Imprint Ads info</p>
+          <p>More ...</p>
+          <p>@ 2021 Twitter, Inc.</p>
         </div>
       </div>
+      
+
     </footer>
     
   </body>
