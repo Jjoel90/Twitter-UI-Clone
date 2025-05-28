@@ -68,342 +68,543 @@
     @stack('dumper')
   </head>
 
-  <body class="flex justify-center bg-black text-white gap-10">
+  <body class="flex flex-col bg-black text-white md:flex-row min-h-screen ">
 
-    <header class="flex flex-cols-2 w-[20%]">
+    <aside class="fw-full md:w-64 p-4 border-gray-800 hidden xl:block">
 
-        <section class="space-y-60">
-          <div>
-              <img src="/public/images/Vector.svg" alt="svp" class="py-2 p-4 w-23 h-18">
-              <div>
-                <div class="m-4 space-y-2">
-                  <div class=" Nav flex gap-4">
-                    <img src="/public/images/Group (12).svg" alt="svg" class="">
-                    <a href="" class="font-semibold text-white">Home</a>
-                  </div>
-                  <div class="flex gap-4">
-                    <img src="/public/images/Group (3).svg" alt="" class="">
-                    <a href="" class="font-semibold text-white">Explore</a>
-                  </div>
-                  <div class="flex gap-4">
-                    <img src="/public/images/Group (2)2.svg" alt="">
-                    <a href="" class="font-semibold text-white">Notifications</a>
-                  </div>
-                  <div class="flex gap-4">
-                    <img src="/public/images/Group (4)1.svg" alt="">
-                    <a href="" class="font-semibold text-white">Messages</a>
-                  </div>
-                  <div class="flex gap-4">
-                    <img src="/public/images/Vector (2)1.svg" alt="" class="w-4 h-auto">
-                    <a href="" class="font-semibold text-white">Bookmarks</a>
-                  </div>
-                <div class="flex gap-4">
-                <img src="/public/images/Group (4)1.svg" alt="">
-                <a href="" class="font-semibold text-white">Lists</a>
-                </div>
-                <div class="flex gap-4">
-                  <img src="/public/images/Group (2)1.svg" alt="">
-                  <a href="" class="font-semibold text-white">Profile</a>
-                </div>
-                <div class="flex gap-4">
-                  <img src="/public/images/Group (2)3.svg" alt="">
-                  <a href="" class="font-semibold text-white">More</a>
+        <section class="space-y-96">
+
+          <!-- Logo Twitter -->
+
+              <div class="space-y-6">
+                <img src="/public/images/Vector.svg" alt="svp" class="py-2 p-4 w-23 h-18">
+        
+                <!-- Menu principal -->
+
+                <div class="space-y-6">
+                  <nav class="flex flex-col space-y-4 text-white text-lg font-semibold ">
+                    <a href="#" class="flex items -center gap-4 hover:bg-gray-800 p-2 rounded">
+                      <img src="/public/images/Group (12).svg" alt="home" class="w-6 h-6 ">
+                      <span>Home</span>
+                    </a>
+
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (3).svg" alt="explore" class="w-6 h-6">
+                      <span>Explore</span>
+                    </a>
+                  
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (2)2.svg" alt="notifications" class="w-6 h-6">
+                      <span>Notifications</span>
+                    </a> 
+                    
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (4)1.svg" alt="message" class="w-6 h-6">
+                      <span>Messages</span>
+                    </a>
+                    
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Vector (2)1.svg" alt="bookmarks" class="w-6 h-6">
+                      <span>Bookmarks</span>
+                    </a>
+
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (4)1.svg" alt="lists" class="w-6 h-6">
+                      <span>Lists</span>
+                    </a>
+
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (2)1.svg" alt="profile" class="w-6 h-6">
+                      <span>Profile</span>
+                    </a>
+
+                    <a href="#" class="flex items-center gap-4 hover:bg-gray-800 p-2 rounded ">
+                      <img src="/public/images/Group (2)3.svg" alt="more" class="w-6 h-6">
+                      <span>More</span>
+                    </a>
+                  </nav>
+                    
+                   <!-- Button Tweet -->
+
+                  <button class="bg-[#1D9BF0] text-white w-full hover:bg-sky-600 font-bold py-2 rounded-full mt-6">
+                    Tweet
+                  </button>
                 </div>
               </div>
-              <button type="submit" class="bg-[#1D9BF0] text-white mx-4 px-16 rounded-full border-md border-[#1D9BF0] w-auto h-auto">Tweet</button>
-            
-            </div>
-        </div>
-        <div>
-          <div class="flex gap-4 p-2">
-            <img src="/public/images/Profile-Photo.svg" alt="" class="">
-        
-            <div class="flex items-center">
-              <div class="">
-                <div class="flex ">
-                  <div class="flex ">
-                    <p class="text-white ">Bradley Ortiz</p>
-                    <img src="/public/images/Vector (5).svg" alt="" class="w--auto mr-2">
-                  </div>
-                  <img src="/public/images/Group.png" alt="" class="opacity w-2 h-1">
-                </div>
-                
-                <p class="text-gray-400 text-sm"> @bradley_ </p> 
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
 
+                  <!-- Profil utilisateur (en bas de sidebar) -->
+
+                  <div class="flex gap-4 items-center mt-8 cursor-pointer hover:bg-gray-800 p-22 rounded">
+                    <img src="/public/images/Profile-Photo.svg" alt="profil" class="w-10 h-10 rounded-full">
+
+                    <!-- Infos utilisateur -->
+                    <div class="flex flex-col">
+                      <div class="flex items-center gap-2">
+                        <p class="text-white text-sm font-semibold">Bradley Ortiz</p>
+                        <img src="/public/images/Vector (5).svg" alt="verified" class="w-4 h-4" >
+                        <img src="/public/images/Group.png" alt="" class="opacity w-2 h-1 ml-auto" >
+
+                      </div>
+                      <p class="text-gray-400 text-sm"> @bradley_ </p>
+                    </div>
+                  </div>
+                  
       </section>
-    </header>
+    </aside>
 
-    <main class="w-[41%] ">
-      <section  class="rounded border border-gray-800 divide-y divide-gray-800 ">
-        <div class=" ">
-          <div class="flex justify-between mx-4 py-2">
+    <main class="flex-1 p-4 borde-r border-gray-800 min-h-screen ">
+    
+      <section  class="stycky top-0 bg-black bg-opacity-80 backdrop-blur-sm border-b border-gray-800 z-10rounded border  divide-y divide-gray-800 ">
+        
+        <!-- En tête -->
+        <div class="p-4">
+          <div class="flex justify-between items-center ">
             <a href="" class="font-semibold text-white">Home</a>
-          <img src="/public/images/Top-Tweets.svg" alt="" class="">
+            <img src="/public/images/Top-Tweets.svg" alt="top tweets" class="w-6 h-6">
           </div>
         </div>
+
+        <!-- Zone de tweet -->
         <div class=" w-full space-y-2">
           <div class="flex gap-4 p-2">
             <img src="/public/images/Profile-Photo.svg" alt="" class="">
             <p class=" text-gray text-gray-500">What's happening?</p> 
           </div>
-          <div class="flex justify-between items-center gap-60 ">
-            <div class="flex gap-4 m-2 px-20">
-              <img src="/public/images/Group (2)9.svg" alt=" " class="">
-              <img src="/public/images/Group (2)8.svg" alt="">
-              <img src="/public/images/Vector (2)7.svg" alt="">
-              <img src="/public/images/Group (2)10.svg" alt="">
-              <img src="/public/images/Schedule.svg" alt="">
-            </div>
-            <button type="submit" class="bg-[#1D9BF0] text-white m-2 px-6 rounded-full border-md border-[#1D9BF0] w-auto h-8 ">Tweet</button>
-          </div> 
-        </div>
-
-        <div class="flex gap-2 m-2">
-            <img src="/public/images/image 1.png" alt="png" class="w-auto h-10 mx-2 ">
-          <div class="">
-            <div class="flex items-center gap-1">
-              <p class="text-white ">CNN</p>
-              <img src="/public/images/Group (2)0.svg" alt="">
-              <p class="text-gray-500 text-xs">@CCN. 7m </p>
-            </div>
-
-              <p class="m-2">President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminium and steel as a "major breakthroug" that would serve to both strengthen the US steel industry and combat the global climate crisis.</p>
-        
-            <div class="flex gap-20">
-              <div class="flex items-center gap-4">
-                <img src="/public/images/Buton.svg" alt="" >
-                <span class="text-gray-500">57</span>
-              </div>
-              <div class="flex items-center gap-4">
-                <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25">
-                <span class="text-gray-500 gap-6">144</span>
-              </div>
-              <div class="flex items-center text-gray-500 gap-4">
-                <img src="/public/images/React.svg" alt="icon" class="opacity-25">
-                <span class="text-gray-500 gap-5">184</span>
-              </div class="">
-              <img src="/public/images/Group (200).svg" alt="icon" class="opacity-25">
-            </div>
-            
-          </div> 
-        </div>
-
-        <div class="flex gap-4  w-full">
-
-          <img src="/public/images/image 1 (1).svg" alt="" class="w-auto h-10 mx-2 ">
-          <div class="space-y-4">
-            <div class="space-y-4">
-              <div class="flex items-center gap-1 space-y-4">
-                <p class="text-white ">The New York Times</p>
-                <img src="/public/images/Group (2)0.svg" alt="">
-                <p class="text-gray-500 text-xs">@nytimes. 2h </p>
-              </div>
-              <div class="text-gray-500 ">
-                <div class="px-1 ">
-                  <p>Gardning boomed during the pandemic. Six Black writers share how it</p>
-                  <p>has helped them re-establish, and reimagine, a connection to</p>
-                  <p>cultivation and the land</p>
-                </di>
-                  <img src="/public/images/Img.png" alt="" class="wx-360 h-auto mb-6">  
-                </div>
-              </div>
-            </div>
-          </div>   
-        </div>
-        
-        <div>
-          <div class="flex gap-2 m-2">
           
-            <img src="/public/images/image 1 (2).svg" alt="png" class="w-auto h-10 mx-2 ">
-          <div class="">
-            <div class="flex items-center gap-1">
-              <p class="text-white font-semibold ">Twitter</p>
-              <img src="/public/images/Group (2)0.svg" alt="">
-              <p class="text-gray-500 text-xs">@Twitter. Oct 29</p>
-            </div>
-            <div class="text-gray-500">
-              <p>BIG NEWS lol jk still Twitter</p>
-            </div>
-          </div>  
-          
-        </div>
+           <!-- Conteneur des icônes -->
+          <div class="flex justify-between items-center mx-4 my-2">
+            <div class="flex justify-between items-center px-4 py-2 mx-8">
 
-        <div class="flex gap-4  w-full ">
-          <div class="flex gap-2 m-2">
-          
-            <img src="/public/images/image 1 (2).svg" alt="png" class="w-auto h-10 mx-2 ">
-          <div class="">
-            <div class="flex items-center gap-1">
-              <p class="text-white font-semibold">Twitter</p>
-              <img src="/public/images/Group (2)0.svg" alt="">
-              <p class="text-gray-500 text-xs">@Twitter. Oct 4</p>
-            </div>
-              <p class="text-gray-500">hello literally everyone</p>
-          </div> 
-        </div>
-        
-        <div class="flex gap-2 m-2">
-          
-          <img src="/public/images/image 1 (2).svg" alt="png" class="w-auto h-10 mx-2 ">
-        <div class="">
-          <div class="flex items-center gap-1">
-            <p class="text-white font-semibold ">Twitter</p>
-            <img src="/public/images/Group (2)0.svg" alt="">
-            <p class="text-gray-500 text-xs">@Twitter. Oct 4</p>
+              <div class="flex items-center gap-4 text-[#1D9BF0]">
+                 <!-- Icone Mwdia -->
+                 
+               <button class="p-2 rounded-full hover:bg-[#1D9BF0]/10 transition">
+                 <img src="/public/images/Group (2)9.svg" alt="media">
+               </button>
+   
+                <!-- Icône GIF -->
+               <button class="p-2 rounded-full hover:bg-[#1D9BF0]/10 transition">
+                 <img src="/public/images/Group (2)8.svg" alt="gif">
+               </button>
+               
+                 <!-- Icône Sondage -->
+               <button class="p-2 rounded-full hover:bg-[#1D9BF0]/10 transition">
+                 <img src="/public/images/Vector (2)7.svg" alt="sondage">
+               </button>
+               
+               <!-- Icône Emoji -->
+               <button class="p-2 rounded-full hover:bg-[#1D9BF0]/10 transition">
+                 <img src="/public/images/Group (2)10.svg" alt="emoji">
+               </button>
+               
+               <!-- Icône Schedule -->
+               <button class="p-2 rounded-full hover:bg-[#1D9BF0]/10 transition">
+                 <img src="/public/images/Schedule.svg" alt="planifier">
+               </button>
+              </div>                
+             </div>
+   
+              <!-- Bouton Tweet -->
+             <button 
+               class="bg-[#1D9BF0] hover:bg-[#1A8CD8] text-white px-4 py-1.5 rounded-full font-bold text-sm transition disabled:opacity-50">Tweet 
+             </button>              
+           </div>
           </div>
-            <p class="text-gray-500">hello literally everyone</p>
-        </div>  
+
+        <div class="flex gap-3 p-4 hover:bg-gray-900/50 transition cursor-pointer border-b border-gray-800">
+
+          <!-- Avatar -->
+
+            <img src="/public/images/image 1.png" alt="logo" class="w-12 h-12 rounded-full flex-shrink-0 ">
+
+            <!-- Contenu du tweet -->
+
+          <div class="flex-1 min-w-0">
+
+            <div class="flex items-center gap-1 mb-1">
+              <p class="text-white  font-bold truncate">CNN</p>
+              <img src="/public/images/Group (2)0.svg" alt="">
+              <p class="text-gray-500 text-sm truncate">@CCN. 7m </p>
+            </div>
+
+            <!-- corps du tweet -->
+            <p class="text-white/90 mb-3 leading-snug">
+              President Joe Biden touted a new agreement reached with the 
+            European Union to ease Trump-era tariffs on aluminium and steel as a 
+            "major breakthroug" that would serve to both strengthen the US steel in
+            dustry and combat the global climate crisis.</p>
+
+            <!-- Actions -->
         
+            <div class="flex justify-between max-w-md text-gray-500">
+
+              <!-- Reponse -->
+              <button class="flex items center group">
+                  <div class=" flex items-center p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                    <img src="/public/images/Buton.svg" alt="" class="" >
+                    <span class="text-sm ml-1">57</span>
+                  </div>   
+              </button>
+
+              <!-- Retweets -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">144</span>
+                </div> 
+              </button>
+
+              <!-- J'aime -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/React.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">184</span>
+                </div>   
+              </button>
+
+              <!-- Partager -->
+              <button class="opacity-25 p-2 rounded-full group-hover:bg-blue-900/20">
+                  <img src="/public/images/Group (200).svg" alt="icon" class="w-1.25rem h-1.25rem">
+              </button>
+            </div>  
+          </div> 
+        </div>
+      
+        <div class="flex gap-3 w-full p-4 hover:bg-gray-900/50 transition cursor-pointer border-b border-gray-800">
+
+          <!-- Avatar -->
+
+          <img src="/public/images/image 1 (1).svg" alt="" class="w-12 h-12 rounded-full flex-shrink-0">
+
+          <!-- Cotenu du tweet -->
+          <div class="flex-1 min-w-0 space-y-6 ">
+            <div class="">
+              <div class="flex items-center gap-1">
+                <p class="text-white font-bold ">The New York Times</p>
+                <img src="/public/images/Group (2)0.svg" alt="">
+                <p class="text-gray-500 text-sm">@nytimes. 2h </p>
+              </div>
+
+              <!-- Corps du tweet -->
+              <div class="space-y-4">
+
+              <p class="text-white/90 leading-snug">
+                Gardning boomed during the pandemic. Six Black writers share how it 
+              has helped them re-establish, and reimagine, a connection to
+              cultivation and the land</p>
+
+              <!-- Image attachée -->
+                <img src="/public/images/Img.png" alt="" class="w-full max-[360px] h-full p-2 rounded-sm border-gray-800">  
+
+              
+                <!-- Actions -->
+                
+              <div class="flex justify-between max-w-md text-gray-500">
+
+                  <!-- Reponse -->
+                  <button class="flex items center group">
+                    <div class=" flex items-center p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                      <img src="/public/images/Buton.svg" alt="" class="" >
+                      <span class="text-sm ml-1">19</span>
+                    </div>   
+                  </button>
+
+                  <!-- Retweets -->
+                  <button class="flex items center group">
+                    <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                      <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                      <span class="text-sm ml-1">48</span>
+                    </div> 
+                  </button>
+
+                  <!-- J'aime -->
+                  <button class="flex items center group">
+                    <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                      <img src="/public/images/React.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                      <span class="text-sm ml-1">482</span>
+                    </div>   
+                  </button>
+
+                  <!-- Partager -->
+                  <button class="opacity-25 p-2 rounded-full group-hover:bg-blue-900/20">
+                      <img src="/public/images/Group (200).svg" alt="icon" class="w-1.25rem h-1.25rem">
+                  </button>
+                </div>
+              </div> 
+
+            </div>
+          </div>
+        </div> 
+
+        <div class="flex gap-3 p-4 hover:bg-gray-900/50 transition cursor-pointer border-b border-gray-800 ">
+
+          <!-- Avatar -->
+          <img src="/public/images/image 1 (2).svg" alt="png" class="w-12 h-12 rounded-full flex-shrink-0 ">
+
+          <!-- Contenu du tweet -->
+          <div>
+            <div class="flex items-center gap-1 mb-1">
+              <p class="text-white font-bold">Twitter</p>
+              <img src="/public/images/Group (2)0.svg" alt="">
+              <p class="text-gray-500 text-sm">@Twitter. Oct 29</p>
+            </div>
+  
+            <!-- Texte du tweet -->
+            <p class="text-white/90 mb-3">BIG NEWS lol jk still Twitter</p>
+
+                
+                <!-- Actions -->
+                
+            <div class="flex justify-between gap-12 max-w-md text-gray-500">
+
+              <!-- Reponse -->
+              <button class="flex items center group">
+                <div class=" flex items-center p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/Buton.svg" alt="" class="" >
+                  <span class="text-sm ml-1">16.8K</span>
+                </div>   
+              </button>
+
+              <!-- Retweets -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">36.6K</span>
+                </div> 
+              </button>
+
+              <!-- J'aime -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/React.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">267.1K</span>
+                </div>   
+              </button>
+
+              <!-- Partager -->
+              <button class="opacity-25 p-2 rounded-full group-hover:bg-blue-900/20">
+                  <img src="/public/images/Group (200).svg" alt="icon" class="w-1.25rem h-1.25rem">
+              </button>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="flex gap-3 p-4 hover:bg-gray-900/50 transition cursor-pointer border-b border-gray-800 ">
+
+          <!-- Avatar -->
+          <img src="/public/images/image 1 (2).svg" alt="png" class="w-12 h-12 rounded-full flex-shrink-0 ">
+
+          <!-- Contenu du tweet -->
+          <div>
+            <div class="flex items-center gap-1 mb-1">
+              <p class="text-white font-bold">Twitter</p>
+              <img src="/public/images/Group (2)0.svg" alt="">
+              <p class="text-gray-500 text-sm">@Twitter. Oct 29</p>
+            </div>
+  
+            <!-- Texte du tweet -->
+            <p class="text-white/90 mb-3">hello litteraly everyone</p>
+
+                
+                <!-- Actions -->
+                
+            <div class="flex justify-between gap-12 max-w-md text-gray-500">
+
+              <!-- Reponse -->
+              <button class="flex items center group">
+                <div class=" flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/Buton.svg" alt="" class="" >
+                  <span class="text-sm ml-1">118.7K</span>
+                </div>   
+              </button>
+
+              <!-- Retweets -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/Retweet.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">785.4K</span>
+                </div> 
+              </button>
+
+              <!-- J'aime -->
+              <button class="flex items center group">
+                <div class="flex items-center gap-2 p-2 rounded-full group-hover:bg-blue-900/20 group-hover:text-blue-500">
+                  <img src="/public/images/React.svg" alt="icon" class="opacity-25 w-1.25rem h-1.25rem">
+                  <span class="text-sm ml-1">3.3M</span>
+                </div>   
+              </button>
+
+              <!-- Partager -->
+              <button class="opacity-25 p-2 rounded-full group-hover:bg-blue-900/20">
+                  <img src="/public/images/Group (200).svg" alt="icon" class="w-1.25rem h-1.25rem">
+              </button>
+            </div>
+          </div> 
+        </div>
+          
       </section>
     </main>
     
-    <footer class="py-2 space-y- w-[25%] " >
-      <div class="relative">
-        <div class="text-center text-s text-gray-500 bg-[rgb(32,35,39)] w-auto h-auto rounded-full border-md border-gray mx-2 px-2 focus:outline-none">
-          <input type="text" name="name" id="" placeholder="Search Twitter" class="bg-transparent text-center" >
-          <img src="/public/images/Vector (20).svg" alt="" class="absolute left-6  top-1">
+    <footer class=" w-[350px] border-gray-800 p-4 hidden xl:block sticky top-0 h-screen overflow-y-auto" >
+
+      <!-- Barre de recherche -->
+      <div class="relative mb-4 space-y-4">
+
+        <div class="relative w-full bg-[rgb(32,35,39)] text-center text-gray-400 py-3 pl-10 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[rgb(32,35,39)] w-auto h-auto rounded-full border-md border-gray mx-2 px-2 focus:outline-none">
+          <input type="text" placeholder="Search Twitter" class="bg-transparent text-center" >
+          <img src="/public/images/Vector (20).svg" alt="" class="absolute left-3 top-3.5 w-5 h-5 text-gray-500">
         </div>
         
-      </div>
-      
-      <div class="bg-[rgb(32,35,39)] space-y-4 rounded border-md border-gray-200 m-2 p-2">
+        <!-- Tendances -->
+        <div class="bg-[rgb(32,35,39)] rounded-2xl md-4">
+          <div class="p-4">
+            <div class="flex justify-between items-cneter mb-4 p-2">
+              <h4 class="text-white text-xl font-bold">Trends for you</h4>
 
-        <div class=" ">
-          <div class="flex items-center gap-20 ">
-            <p class="text-white">Trends for you</p>
-            <img src="/public/images/Settings.svg" alt="" class="w-5 h-5 cursor-pointer">
-          </div>  
+              <button class="px-4">
+                <img src="/public/images/Settings.svg" alt="settings" class="w-5 h-5 ">
+              </button>
+            </div>
+
+            <!-- Listes des tendances -->
+            <div class="space-y-4">
+              <div class="cursor-pointer hover:bg-gray-700/50 p-3 rounded-lg">
+                <div class="flex justify-between">
+                  <p class="text-xs text-gray-400">Trending in Turkey</p>
+                  <button>
+                    <img src="/public/images/Group.png" alt="" class="opacity-70 ">
+                  </button>
+                </div>
+                <p class="font-bold text-white mt-1">#SQUID</p>
+                <P class="text-xs text-gray-400 mt-1">2,066 Tweets</P>
+              </div>
+
+              <div class="cursor-pointer hover:bg-gray-700/50 p-3 rounded-lg">
+                <div class="flex justify-between">
+                  <p class="text-xs text-gray-400">Trending in Turkey</p>
+                  <button>
+                    <img src="/public/images/Group.png" alt="" class="opacity-70 ">
+                  </button>
+                </div>
+                <p class="font-bold text-white mt-1">#SQUID</p>
+                <P class="text-xs text-gray-400 mt-1">2,066 Tweets</P>
+              </div>
+
+              <div class="cursor-pointer hover:bg-gray-700/50 p-3 rounded-lg">
+                <div class="flex justify-between">
+                  <p class="text-xs text-gray-400">Trending in Turkey</p>
+                  <button>
+                    <img src="/public/images/Group.png" alt="" class="opacity-70 ">
+                  </button>
+                </div>
+                <p class="font-bold text-white mt-1">#SQUID</p>
+                <P class="text-xs text-gray-400 mt-1">2,066 Tweets</P>
+              </div>
+
+              <div class="cursor-pointer hover:bg-gray-700/50 p-3 rounded-lg">
+                <div class="flex justify-between">
+                  <p class="text-xs text-gray-400">Trending in Turkey</p>
+                  <button>
+                    <img src="/public/images/Group.png" alt="" class="opacity-70 ">
+                  </button>
+                </div>
+                <p class="font-bold text-white mt-1">#SQUID</p>
+                <P class="text-xs text-gray-400 mt-1">2,066 Tweets</P>
+              </div>
+
+            </div>
+
+            <a href="#" class="block text-[#1D9BF0] text-sm py-3 hover:underline p-2">Show more</a>
+          </div>
         </div>
-        <div class="flex items-center gap-16">
-          <div >
-            <div class="flex items-center gap-28">
-              <p class=" text-xs text-gray-500">Trending in Turkey</p>
-              <img src="/public/images/Group.png" alt="" class="opacity ">
+
+        <!-- Suggestions -->
+        <div class="bg-[rgb(32,35,39)] rounded-2xl md-4">
+          <div class="p-4">
+            <h1 class="text-white text-bold text-xl mb-4">Who to follow</h1>
+
+            <!-- Liste suggestions -->
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                  <img src="/public/images/image 1 (1).svg" alt="" class="w-10 h-10 rounded-full">
+
+                  <div>
+                    <div class="flex items-center gap-1">
+                      <p class="text-white font-bold text-xs">The New York Times</p>
+
+                      <img src="/public/images/Group (2)0.svg" alt="" class="w-4 h-4">
+                    </div>
+                    <p class="text-gray-400 text-sm text-xs"> @nytimes. 2h </p>
+                    
+                  </div>
+                </div>
+                <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6">Follow</button>
+              </div>
+
+              <div class="flex items-center">
+                <div class="flex items-center w-full space-y-2">
+                
+                  <img src="/public/images/image 1.png" alt="" class="w-10 h-10 mr-2">
+        
+                  <div class="flex items-center">
+                    <div class="">
+                      <div class="flex">
+                        <p class="text-white ">CNN</p>
+                        <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
+                      </div>
+                      
+                      <p class="text-gray-400 text-sm"> @CNN </p> 
+                    </div>
+                  </div>
+                </div>
+                
+                <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6 ">Follow</button>
+              </div>
+      
             </div>
-            
-            <p class="text-white font-semibold text-base">#SQUID</p>
-            <p class="text-xs text-gray-500">2,066 Tweets</p>
+
+            <div class="flex items-center">
+              <div class="flex items-center w-full space-y-2">
+              
+                <img src="/public/images/image 1 (2).svg" alt="" class="w-10 h-10 mr-2">
+      
+                <div class="flex items-center">
+                  <div class="">
+                    <div class="flex">
+                      <p class="text-white ">Twitter</p>
+                      <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
+                    </div>
+                    
+                    <p class="text-gray-400 text-sm"> @Twitter</p> 
+                  </div>
+                </div>
+              </div>
+              
+              <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6 ">Follow</button>
+    
+            </div>
+
+            <a href="#" class="block text-[#1D9BF0] text-sm py-3 hover:underline p-2">Show more</a>
           </div>
-            
         </div>
-          <div >
-            <div class="flex items-center gap-28">
-              <p class="text-xs text-gray-500">Trending in Turkey</p>
-              <img src="/public/images/Group.png" alt="" class="opacity ">
-            </div>
-            
-            <p class="text-white font-semibold text-base">#SQUID</p>
-            <p class="text-xs text-gray-500">2,066 Tweets</p>
-          </div>
-          <div >
-            <div class="flex items-center gap-28">
-              <p class="text-xs text-gray-400">Trending in Turkey</p>
-              <img src="/public/images/Group.png" alt="" class="opacity ">
-            </div>
-            
-            <p class="text-white font-semibold text-base">#SQUID</p>
-            <p class="text-xs text-gray-800">2,066 Tweets</p>
-          </div>
-          <div >
-            <div class="flex items-center gap-28">
-              <p class="text-xs text-gray-500">Trending in Turkey</p>
-              <img src="/public/images/Group.png" alt="" class="opacity ">
-            </div>
-            
-            <p class="text-white font-semibold text-base">#SQUID</p>
-            <p class="text-xs text-gray-800">2,066 Tweets</p>
-          </div>
-          <a href="" class="text-[#1D9BF0] text-sm text-xs ">Show more</a>
+      </div>
+
+      <div class="space-y-2 text-gray-500 text-xs px-2 ">
+        <div class="flex flex-wrap gap-2">
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">cookie Policy</a>
+          <a href="#" class="hover:underline">Imprint</a>
+          <a href="#" class="hover:underline">Ads info</a>
+          <a href="#" class="hover:underline">More ...</a>
+          <p>@ 2023 Twitter, Inc.</p>
+        </div>
+
         
       </div>
-      <div class="space-y-4 bg-[rgb(32,35,39)] rounded border-md border-gray-200 m-2 p-2">
-        <h1 class="text-white text-semibold text-xl">Who to follow</h1>
-
-
-        <div class="flex items-center">
-          <div class="flex items-center w-full space-y-2">
-          
-            <img src="/public/images/image 1 (1).svg" alt="" class="w-8 h-8 mr-2">
-  
-            <div class="flex items-center">
-              <div class="">
-                <div class="flex">
-                  <p class="text-white ">The New York Times</p>
-                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
-                </div>
-                
-                <p class="text-gray-400 text-sm"> @nytimes. 2h </p> 
-              </div>
-            </div>
-          </div>
-          
-          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6">Follow</button>
-        </div>
-
-        <div class="flex items-center">
-          <div class="flex items-center w-full space-y-2">
-          
-            <img src="/public/images/image 1.png" alt="" class="w-8 h-8 mr-2">
-  
-            <div class="flex items-center">
-              <div class="">
-                <div class="flex">
-                  <p class="text-white ">CNN</p>
-                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
-                </div>
-                
-                <p class="text-gray-400 text-sm"> @CNN </p> 
-              </div>
-            </div>
-          </div>
-          
-          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6 ">Follow</button>
-        </div>
-
-        <div class="flex items-center">
-          <div class="flex items-center w-full space-y-2">
-          
-            <img src="/public/images/image 1 (2).svg" alt="" class="w-8 h-8 mr-2">
-  
-            <div class="flex items-center">
-              <div class="">
-                <div class="flex">
-                  <p class="text-white ">Twitter</p>
-                  <img src="/public/images/Group (2)0.svg" alt="" class="w--auto mr-2">
-                </div>
-                
-                <p class="text-gray-400 text-sm"> @Twitter</p> 
-              </div>
-            </div>
-          </div>
-          
-          <button type="submit" class="bg-white text-gray-900 text-sm hover:bg-gray-600 text-black text-xs px-3 py-1 rounded-full border-md w-auto h-6 m-2">Follow</button>
-
-        </div>
-        <a href="" class="text-[#1D9BF0] text-sm text-xs ">Show more</a>
-
-      </div>
-
-      <div class="space-y-2 text-gray-800 text-sm p-4 ">
-        <div class="flex gap-1 items center ">
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>cookie Policy</p>
-        </div>
-        <div class="flex gap-1">
-          <p>Imprint Ads info</p>
-          <p>More ...</p>
-          <p>@ 2021 Twitter, Inc.</p>
-        </div>
-      </div>
-      
-
+    
     </footer>
     
   </body>
