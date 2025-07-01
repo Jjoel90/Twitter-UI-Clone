@@ -7,6 +7,8 @@
 |
 */
 
+import BlogController from '#controllers/BlogController'
 import router from '@adonisjs/core/services/router'
 
 router.on('/').render('pages/home')
+
