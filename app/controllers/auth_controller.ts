@@ -7,13 +7,15 @@ export default class AuthController {
         return view.render('auth/register')
     }
 
+   
+
     public async loginShow({ view }: HttpContext) {
 
-        return view.render('auth/logout')
+        return view.render('auth/login')
     }
 
     public async logoutShow({ view }: HttpContext) {
 
-        return view.render('auth/logout')
+        return view.render('auth/logout')//optionnel
     }
 }

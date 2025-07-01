@@ -1,19 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        :root {
+            --primary-color: #4a6bff;
+            --hover-color: #3a5bef;
+            --error-color: #ff4a4a;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --border-color: #ddd;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .register-form {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+        
+        .form-title {
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 1.8rem;
+            font-size: 1.8rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.2);
+        }
+        
+        .input-field.error {
+            border-color: var(--error-color);
+        }
+        
+        .error-message {
+            color: var(--error-color);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 0.5rem;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--hover-color);
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+        
+        .login-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .register-form {
+                padding: 1.8rem;
+            }
+            
+            .form-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form class="register-form" action="/register" method="POST">
+        <h2 class="form-title">Créer un compte</h2>
+        
+        <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username" class="input-field" 
+                   required minlength="3" maxlength="20"
+                   placeholder="Choisissez un nom d'utilisateur">
+            <div class="error-message" id="username-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" class="input-field" 
+                   required placeholder="Entrez votre adresse email">
+            <div class="error-message" id="email-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" class="input-field" 
+                   required minlength="8" placeholder="Créez un mot de passe sécurisé">
+            <div class="error-message" id="password-error"></div>
+        </div>
+        
+        <button type="submit" class="submit-btn">S'inscrire</button>
+        
+        <div class="login-link">
+            Déjà un compte ? <a href="/login">Se connecter</a>
+        </div>
+    </form>
 
-<form action="">
-    <label>
-    <p>Username</p>
-    <input type="text" name="username" />
-    </label>
-
-    <label>
-        <p>Email</p>
-        <input type="text" name="email" />
-    </label>
-
-    <label>
-        <p>Password</p>
-        <input type="text" name="password" />
-    </label>
-
-    <button type="submit">Enregistrer</button>
-</form>
+    <script>
+        // Validation basique côté client
+        document.querySelector('.register-form').addEventListener('submit', function(e) {
+            let isValid = true;
+            
+            // Validation username
+            const username = document.getElementById('username');
+            if(username.value.length < 3) {
+                document.getElementById('username-error').textContent = 'Le nom d\'utilisateur doit contenir au moins 3 caractères';
+                document.getElementById('username-error').style.display = 'block';
+                username.classList.add('error');
+                isValid = false;
+            } else {
+                document.getElementById('username-error').style.display = 'none';
+                username.classList.remove('error');
+            }
+            
+            // Validation email
+            const email = document.getElementById('email');
+            if(!email.value.includes('@') || !email.value.includes('.')) {
+                document.getElementById('email-error').textContent = 'Veuillez entrer une adresse email valide';
+                document.getElementById('email-error').style.display = 'block';
+                email.classList.add('error');
+                isValid = false;
+            } else {
+                document.getElementById('email-error').style.display = 'none';
+                email.classList.remove('error');
+            }
+            
+            // Validation password
+            const password = document.getElementById('password');
+            if(password.value.length < 8) {
+                document.getElementById('password-error').textContent = 'Le mot de passe doit contenir au moins 8 caractères';
+                document.getElementById('password-error').style.display = 'block';
+                password.classList.add('error');
+                isValid = false;
+            } else {
+                document.getElementById('password-error').style.display = 'none';
+                password.classList.remove('error');
+            }
+            
+            if(!isValid) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
